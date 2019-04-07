@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spirograph</title>
+	<script type="text/javascript">
+		var R = 8;
+		var r = 1;
+		var a = 4;
+		var cos=Math.cos, sin=Math.sin, pi=Math.PI, nRev=16;
+		for(var t=0.0; t<=(pi*nRev); t += 0.01){
+			var x = (R+r)*cos((r/R)*t)-a*cos((1+r/R)*t);
+			var y = (R+r)*sin((r/R)*t) - a*sin ((1+r/R)*t);
+			document.write(-118.2902241+x/100,"," ,34.0217395+y/100, "<br>" );}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
